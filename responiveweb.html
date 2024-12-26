@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background: #333;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* Sections */
+        section {
+            padding: 2rem 1rem;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        section p {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* About Section */
+        .about {
+            background: #f4f4f4;
+        }
+
+        /* Skills Section */
+        .skills {
+            text-align: center;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .skill {
+            background: #007bff;
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            flex: 1 1 calc(25% - 1rem);
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .skill {
+                flex: 1 1 100%;
+            }
+        }
+
+        /* Portfolio Section */
+        .portfolio-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .portfolio-item {
+            flex: 1 1 calc(33.333% - 1rem);
+            background: #f4f4f4;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .portfolio-item a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .portfolio-item a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-item {
+                flex: 1 1 100%;
+            }
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Vivek Kailas Kelkar</h1>
+        <p>Web Developer | Designer | Programmer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Vivek Kailas Kelkar, a passionate web developer with experience in creating modern, responsive, and user-friendly websites. I love coding and solving real-world problems with elegant solutions.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Python</div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <p>Here are some of my projects:</p>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="C:\vivek kelkar\11112021_Toyota_Fortuner_4.0_SRV_4x4_(Colombia)_front_view.png" alt="Project 1">
+                <h3>Project 1</h3>
+                <a href="#">View Project</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300" alt="Project 2">
+                <h3>Project 2</h3>
+                <a href="#">View Project</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300" alt="Project 3">
+                <h3>Project 3</h3>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to work together or have any questions, feel free to reach out!</p>
+        <a href="mailto:john.doe@example.com">Email Me</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
